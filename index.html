@@ -3,265 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boom!</title>
-    <style>
-        .mid{
-            text-align: center;
-        }
-    </style>
+    <title>HTML Lists</title>
 </head>
 <body>
-    <h1>Welcome to HTML Tables</h1>
 
-    <table border>
-        <tr>
-            <th>Student_Id</th>
-            <th>Student_Name</th>
-            <th>Student_Age</th>
-            <th>Student_Gender</th>
-        </tr>
+    <h2>Welcome to HTML Lists</h2>
 
-        <tr>
-            <td>101</td>
-            <td>Ravi</td>
-            <td>23</td>
-            <td>Male</td>
-        </tr>
+        <h4>Engineering</h4>
+        <ul style="list-style-type: circle;">
+            <li>Computer Science Engineering</li>
+            <li>Electronics and Communication Engineering</li>
+            <li>Mechanical Engineering</li>
+        </ul>
+        <h4>Sciences</h4>
+        <ul style="list-style-type: circle;">
+            <li>Mathematics</li>
+            <li>Physics</li>
+            <li>Chemistry</li>
+        </ul>
+        <h4>Arts & Management</h4>
+        <ul style="list-style-type: square;">
+            <li>Management Studies</li>
+            <li>Commerce</li>
+            <li>Arts & Humanities</li>
+        </ul>
+    
+        
+        <h4>Day 1 - Registration Process</h4>
+        <ol>
+            <li>Online Registration</li>
+            <li>Document Verification</li>
+            <li>ID Card Collection</li>
+        </ol>
 
-        <tr>
-            <td>102</td>
-            <td>Ramya</td>
-            <td>21</td>
-            <td>Female</td>
-        </tr>
+        <h4>Day 2 - Technical Events</h4>
+        <ol type="A">
+            <li>Coding Challenge</li>
+            <li>Web Development</li>
+            <li>Hackathon</li>
+        </ol>
 
-        <tr>
-            <td>103</td>
-            <td>Sam</td>
-            <td>23</td>
-            <td>Male</td>
-        </tr>
+        <h4>Day 3 - Cultural Events</h4>
+        <ol type="a">
+            <li>Singing</li>
+            <li>Dancing</li>
+            <li>Drama</li>
+        </ol>
 
-        <tr>
-            <td>104</td>
-            <td>Roopa</td>
-            <td>22</td>
-            <td>Female</td>
-        </tr>
+        <h4>General Process</h4>
+        <ol type="I">
+            <li>Examination</li>
+            <li>Evaluation</li>
+            <li>Result Preparation</li>
+        </ol>
 
-    </table>
+        <h4>Post Event Activities</h4>
+        <ol type="i">
+            <li>Clean Up</li>
+            <li>Submission of Reports</li>
+            <li>Team Meeting</li>
+        </ol>
+        
+        <h4>Numbers starting from 10 (start = 10)</h4>
+        <ol start="10">
+            <li>Rahul</li>
+            <li>Priya</li>
+            <li>Akash</li>
+        </ol>
 
-    <h2>Vertical Table</h2>
+        <h4>Alphabetical (Uppercase) starting from F (start = F)</h4>
+        <ol type="A" start="6">
+            <li>Ananya</li>
+            <li>Bharath</li>
+            <li>Charan</li>
+        </ol>
 
-    <table border>
-        <tr>
-            <th>Student_Id</th>
-            <td>101</td>
-            <td>102</td>
-            <td>103</td>
-            <td>104</td>
-        </tr>
+        <h4>Alphabetical (Lowercase) starting from f (start = f)</h4>
+        <ol type="a" start="6">
+            <li>Harsha</li>
+            <li>Ishita</li>
+            <li>Jagan</li>
+        </ol>
 
-        <tr>
-            <th>Student_Name</th>
-            <td>Ravi</td>
-            <td>Ramya</td>
-            <td>Sam</td>
-            <td>Roopa</td>
-        </tr>
+        <h4>Roman starting from V (start = V)</h4>
+        <ol type="I" start="5">
+            <li>Nikhil</li>
+            <li>Ramesh</li>
+            <li>Sravani</li>
+        </ol>
 
-        <tr>
-            <th>Student_Age</th>
-            <td>23</td>
-            <td>21</td>
-            <td>23</td>
-            <td>22</td>
-        </tr>
+        <h4>Lowercase Roman starting from x (start = x)</h4>
+        <ol type="i" start="10">
+            <li>Manasa</li>
+            <li>Rohit</li>
+            <li>Sohana</li>
+        </ol>
+    
 
-        <tr>
-            <th>Student_Gender</th>
-            <td>Male</td>
-            <td>Female</td>
-            <td>Male</td>
-            <td>Female</td>
-        </tr>
+        <h4>Rankings (reversed)</h4>
+        <ol start="5" reversed>
+            <li>Sai Kiran</li>
+            <li>Priya Sharma</li>
+            <li>Akash Reddy</li>
+            <li>Sneha Patel</li>
+            <li>Karthik Varma</li>
+        </ol>
 
-    </table>
+        <h3>5. Competition Winners (Value Attribute)</h3>
+        <ol>
+            <li value="1">Team Alpha</li>
+            <li value="2">Team Bravo</li>
+            <li value="3">Team Charlie</li>
+            <li value="10">Team Delta</li>
+            <li value="11">Team Echo</li>
+            <li value="12">Team Foxtrot</li>
+        </ol>
+        
+        <h4>Frontend</h4>
+        <ol>
+            <li>HTML
+                <ul style="list-style-type: square;">
+                    <li>Lists</li>
+                    <li>Tables</li>
+                    <li>Forms</li>
+                </ul>
+            </li>
+            <li>CSS
+                <ul style="list-style-type: square;">
+                    <li>Flexbox</li>
+                    <li>Grid</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </li>
+            <li>JavaScript
+                <ul style="list-style-type: square;">
+                    <li>DOM</li>
+                    <li>Events</li>
+                    <li>API Integration</li>
+                </ul>
+            </li>
+        </ol>
 
-    <h2>Table with Caption</h2>
+        <h4>Backend</h4>
+        <ol type="A">
+            <li>Python
+                <ul>
+                    <li>OOP</li>
+                    <li>Collections</li>
+                    <li>Exception Handling</li>
+                </ul>
+            </li>
+            <li>Django
+                <ul>
+                    <li>REST APIs</li>
+                    <li>Security</li>
+                    <li>JPA</li>
+                </ul>
+            </li>
+        </ol>
 
-    <table border>
-        <caption><b>Student Details</b></caption>
-        <tr>
-            <th>Student_Id</th>
-            <th>Student_Name</th>
-            <th>Student_Age</th>
-            <th>Student_Gender</th>
-        </tr>
+        <h4>Database</h4>
+        <ol type="a">
+            <li>MySQL
+                <ul style="list-style-type: square;">
+                    <li>DDL</li>
+                    <li>DML</li>
+                    <li>DQL</li>
+                </ul>
+            </li>
+            <li>MongoDB
+                <ul style="list-style-type: square;">
+                    <li>Collections</li>
+                    <li>Queries</li>
+                    <li>Indexing</li>
+                </ul>
+            </li>
+        </ol>
 
-        <tr>
-            <td>101</td>
-            <td>Ravi</td>
-            <td>23</td>
-            <td>Male</td>
-        </tr>
+        <h3>7. Technical Definitions (Description List)</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language, used to create the structure of web pages.</dd>
 
-        <tr>
-            <td>102</td>
-            <td>Ramya</td>
-            <td>21</td>
-            <td>Female</td>
-        </tr>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets, used for styling web pages.</dd>
 
-        <tr>
-            <td>103</td>
-            <td>Sam</td>
-            <td>23</td>
-            <td>Male</td>
-        </tr>
-
-        <tr>
-            <td>104</td>
-            <td>Roopa</td>
-            <td>22</td>
-            <td>Female</td>
-        </tr>
-
-    </table>
-
-    <h2>Merging columns</h2>
-
-    <table border>
-        <tr>
-            <th colspan="2">Full Name</th>
-            <th>Rating</th>
-        </tr>
-        <tr>
-            <td>Ravi Kiran</td>
-            <td>V</td>
-            <td>7.8</td>
-        </tr>
-        <tr>
-            <td>Ramya Sathwika</td>
-            <td>Suresh</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td>Sachin</td>
-            <td>Gambhira</td>
-            <td>6.7</td>
-        </tr>
-        <tr>
-            <td>Smitha Sri</td>
-            <td>R</td>
-            <td>9</td>
-        </tr>
-    </table>
-
-    <h2>Merging Rows and Columns</h2>
-
-    <table border>
-        <tr>
-            <th rowspan="5">Full Name</th>
-        </tr>
-        <tr>
-            <td>Ravi Kiran</td>
-            <td>V</td>
-        </tr>
-        <tr>
-            <td>Ramya Sathwikarupa</td>
-            <td>Suresh</td>
-        </tr>
-        <tr>
-            <td>Sachin</td>
-            <td>Gambhira</td>
-        </tr>
-        <tr>
-            <td>Smitha Sri</td>
-            <td>Raghuveratilaka</td>
-        </tr>
-        <tr>
-            <th rowspan="5">Rating</th>
-        </tr>
-        <tr>
-            <td colspan="2">7.8</td>
-        </tr>
-        <tr>
-            <td colspan="2">8</td>
-        </tr>
-        <tr>
-            <td colspan="2">6.7</td>
-        </tr>
-        <tr>
-            <td colspan="2">9</td>
-        </tr>
-    </table>
-
-    <h1>Time Table Task</h1>
-
-    <table border class="mid">
-        <caption><h2><b>TIME TABLE</b></h2</caption>
-        <tr>
-            <th>Day/Period</th>
-            <th>I<br>9:30-10:20</th>
-            <th>II <br>10:20-11:10</th>
-            <th>III <br>11:10-12:00</th>
-            <th>12:00-12:40 <br>LUNCH</th>
-            <th>IV <br>12:40-1:30</th>
-            <th>V <br>1:30-2:20</th>
-            <th>VI <br>2:20-3:10</th>
-            <th>VII <br>3:10-4:00</th>
-        </tr>
-        <tr>
-            <th>Monday</th>
-            <td>Eng</td>
-            <td>Mat</td>
-            <td>Che</td>
-            <td rowspan="6">L<br>U<br>N<br>C<br>H</td>
-            <td colspan="3">LAB</td>
-            <td>Phy</td>
-        </tr>
-        <tr>
-            <th>Tuesday</th>
-            <td colspan="3">LAB</td>
-            <td>Eng</td>
-            <td>Che</td>
-            <td>Mat</td>
-            <td>SPORTS</td>
-        </tr>
-        <tr>
-            <th>Wednesday</th>
-            <td>Mat</td>
-            <td>Phy</td>
-            <td>Eng</td>
-            <td>Che</td>
-            <td colspan="3">LIBRARY</td>
-        </tr>
-        <tr>
-            <th>Thursday</th>
-            <td>Phy</td>
-            <td>Eng</td>
-            <td>Che</td>
-            <td colspan="3">LAB</td>
-            <td>Mat</td>
-        </tr>
-        <tr>
-            <th>Friday</th>
-            <td colspan="3">LAB</td>
-            <td>Mat</td>
-            <td>Che</td>
-            <td>Eng</td>
-            <td>Phy</td>
-        </tr>
-        <tr>
-            <th>Saturday</th>
-            <td>Eng</td>
-            <td>Che</td>
-            <td>Mat</td>
-            <td colspan="3">SEMINAR</td>
-            <td>SPORTS</td>
-        </tr>
-    </table>
+            <dt>JavaScript</dt>
+            <dd>A scripting language used to add interactivity to web pages.</dd>
+        </dl>
 
 </body>
 </html>
