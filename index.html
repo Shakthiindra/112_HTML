@@ -1,267 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boom!</title>
-    <style>
-        .mid{
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to HTML Tables</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h2>Course Registration Form</h2>
+    <form>
+      <h3>Personal Details</h3>
 
-    <table border>
-        <tr>
-            <th>Student_Id</th>
-            <th>Student_Name</th>
-            <th>Student_Age</th>
-            <th>Student_Gender</th>
-        </tr>
+      <label for="name">First Name: </label>
+      <input type="text" id="name" required />
 
-        <tr>
-            <td>101</td>
-            <td>Ravi</td>
-            <td>23</td>
-            <td>Male</td>
-        </tr>
+      <br /><br />
 
-        <tr>
-            <td>102</td>
-            <td>Ramya</td>
-            <td>21</td>
-            <td>Female</td>
-        </tr>
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname"/>
 
-        <tr>
-            <td>103</td>
-            <td>Sam</td>
-            <td>23</td>
-            <td>Male</td>
-        </tr>
+      <br /><br />
 
-        <tr>
-            <td>104</td>
-            <td>Roopa</td>
-            <td>22</td>
-            <td>Female</td>
-        </tr>
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" required />
 
-    </table>
+      <br /><br />
 
-    <h2>Vertical Table</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
 
-    <table border>
-        <tr>
-            <th>Student_Id</th>
-            <td>101</td>
-            <td>102</td>
-            <td>103</td>
-            <td>104</td>
-        </tr>
+      <br /><br />
 
-        <tr>
-            <th>Student_Name</th>
-            <td>Ravi</td>
-            <td>Ramya</td>
-            <td>Sam</td>
-            <td>Roopa</td>
-        </tr>
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" required />
 
-        <tr>
-            <th>Student_Age</th>
-            <td>23</td>
-            <td>21</td>
-            <td>23</td>
-            <td>22</td>
-        </tr>
+      <br /><br />
 
-        <tr>
-            <th>Student_Gender</th>
-            <td>Male</td>
-            <td>Female</td>
-            <td>Male</td>
-            <td>Female</td>
-        </tr>
+      <label for="pass">Confirm Password:</label>
+      <input type="password" id="pass" required />
 
-    </table>
+      <br /><br />
 
-    <h2>Table with Caption</h2>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required />
 
-    <table border>
-        <caption><b>Student Details</b></caption>
-        <tr>
-            <th>Student_Id</th>
-            <th>Student_Name</th>
-            <th>Student_Age</th>
-            <th>Student_Gender</th>
-        </tr>
+      <br /><br />
 
-        <tr>
-            <td>101</td>
-            <td>Ravi</td>
-            <td>23</td>
-            <td>Male</td>
-        </tr>
+      <label>Gender:</label>
 
-        <tr>
-            <td>102</td>
-            <td>Ramya</td>
-            <td>21</td>
-            <td>Female</td>
-        </tr>
+      <input type="radio" name="gender" id="male"/>
+      <label for="male">Male</label>
 
-        <tr>
-            <td>103</td>
-            <td>Sam</td>
-            <td>23</td>
-            <td>Male</td>
-        </tr>
+      <input type="radio" name="gender" id="female"/>
+      <label for="female">Female</label>
 
-        <tr>
-            <td>104</td>
-            <td>Roopa</td>
-            <td>22</td>
-            <td>Female</td>
-        </tr>
+      <input type="radio" name="gender" id="others" />
+      <label for="others">Others</label>
 
-    </table>
+      <br><br>
 
-    <h2>Merging columns</h2>
+      <label for="country">Country:</label>
+      <select name="country" id="country">
+        <option>--Select Country--</option>
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+        <option>Canada</option>
+        <option>Australia</option>
+      </select>
+      <br><br>
+      <label for="photo">Upload Picture:</label>
+      <input type="file" id="photo">
+      <br><br>
+      <input type="reset">
 
-    <table border>
-        <tr>
-            <th colspan="2">Full Name</th>
-            <th>Rating</th>
-        </tr>
-        <tr>
-            <td>Ravi Kiran</td>
-            <td>V</td>
-            <td>7.8</td>
-        </tr>
-        <tr>
-            <td>Ramya Sathwika</td>
-            <td>Suresh</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td>Sachin</td>
-            <td>Gambhira</td>
-            <td>6.7</td>
-        </tr>
-        <tr>
-            <td>Smitha Sri</td>
-            <td>R</td>
-            <td>9</td>
-        </tr>
-    </table>
-
-    <h2>Merging Rows and Columns</h2>
-
-    <table border>
-        <tr>
-            <th rowspan="5">Full Name</th>
-        </tr>
-        <tr>
-            <td>Ravi Kiran</td>
-            <td>V</td>
-        </tr>
-        <tr>
-            <td>Ramya Sathwikarupa</td>
-            <td>Suresh</td>
-        </tr>
-        <tr>
-            <td>Sachin</td>
-            <td>Gambhira</td>
-        </tr>
-        <tr>
-            <td>Smitha Sri</td>
-            <td>Raghuveratilaka</td>
-        </tr>
-        <tr>
-            <th rowspan="5">Rating</th>
-        </tr>
-        <tr>
-            <td colspan="2">7.8</td>
-        </tr>
-        <tr>
-            <td colspan="2">8</td>
-        </tr>
-        <tr>
-            <td colspan="2">6.7</td>
-        </tr>
-        <tr>
-            <td colspan="2">9</td>
-        </tr>
-    </table>
-
-    <h1>Time Table Task</h1>
-
-    <table border class="mid">
-        <caption><h2><b>TIME TABLE</b></h2</caption>
-        <tr>
-            <th>Day/Period</th>
-            <th>I<br>9:30-10:20</th>
-            <th>II <br>10:20-11:10</th>
-            <th>III <br>11:10-12:00</th>
-            <th>12:00-12:40 <br>LUNCH</th>
-            <th>IV <br>12:40-1:30</th>
-            <th>V <br>1:30-2:20</th>
-            <th>VI <br>2:20-3:10</th>
-            <th>VII <br>3:10-4:00</th>
-        </tr>
-        <tr>
-            <th>Monday</th>
-            <td>Eng</td>
-            <td>Mat</td>
-            <td>Che</td>
-            <td rowspan="6">L<br>U<br>N<br>C<br>H</td>
-            <td colspan="3">LAB</td>
-            <td>Phy</td>
-        </tr>
-        <tr>
-            <th>Tuesday</th>
-            <td colspan="3">LAB</td>
-            <td>Eng</td>
-            <td>Che</td>
-            <td>Mat</td>
-            <td>SPORTS</td>
-        </tr>
-        <tr>
-            <th>Wednesday</th>
-            <td>Mat</td>
-            <td>Phy</td>
-            <td>Eng</td>
-            <td>Che</td>
-            <td colspan="3">LIBRARY</td>
-        </tr>
-        <tr>
-            <th>Thursday</th>
-            <td>Phy</td>
-            <td>Eng</td>
-            <td>Che</td>
-            <td colspan="3">LAB</td>
-            <td>Mat</td>
-        </tr>
-        <tr>
-            <th>Friday</th>
-            <td colspan="3">LAB</td>
-            <td>Mat</td>
-            <td>Che</td>
-            <td>Eng</td>
-            <td>Phy</td>
-        </tr>
-        <tr>
-            <th>Saturday</th>
-            <td>Eng</td>
-            <td>Che</td>
-            <td>Mat</td>
-            <td colspan="3">SEMINAR</td>
-            <td>SPORTS</td>
-        </tr>
-    </table>
-
-</body>
+      <hr>
+      <h3>Course Details</h3>
+      <label for="course">Select Course:</label>
+      <select id="course">
+        <option>--Select Course--</option>
+        <option>Python</option>
+        <option>Java</option>
+        <option>JavaScript</option>
+        <option>HTML & CSS</option>
+      </select>
+      <br><br>
+      <label>Delivery Mode:</label>
+      <input type="radio" name="mode">
+      <label>Online</label>
+      <input type="radio" name="mode">
+      <label>Offline</label>
+      <br><br>
+      <label>Comments:</label><br>
+      <textarea cols="50" rows="6"></textarea>
+      <br><br>
+      <input type="submit">
+    </form>
+  </body>
 </html>
